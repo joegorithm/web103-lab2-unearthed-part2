@@ -21,9 +21,7 @@ const createGiftsTable = async () => {
     try {
         const res = await pool.query(createTableQuery);
         console.log('🎉 gifts table created successfully');
-    }
-
-    catch (err) {
+    } catch (err) {
         console.error('⚠️ error creating gifts table', err);
     }
 }
